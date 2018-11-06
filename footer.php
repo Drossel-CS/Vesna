@@ -24,7 +24,7 @@
 				<?php dynamic_sidebar( 'footer-menu-3' ) ?>
 				<?php dynamic_sidebar( 'footer-menu-4' ) ?>
 			</div>
-			<div class="site-footer-social">
+´			<div class="site-footer-social">
 				<a href="https://www.instagram.com/gustoe_kolaciky/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
 				<a href="https://www.facebook.com/Gustoe.sk/" target="_blank"><i class="icon-facebook-squared"></i></a>
 				<i class="icon-youtube"></i>

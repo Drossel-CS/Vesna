@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Drossel Creative Studio
 Author URI: https://www.drossel.sk
 Description: Description
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: vesna
@@ -1137,7 +1137,7 @@ h1, h2, h3, h4, h5, h6{
 		.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
 			color: #e43159;
 		}
-
+	
 	.site-footer-social{
 		border-top: 1px solid #f4f4f4;
 		padding: 20px;
@@ -1147,13 +1147,10 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.site-footer-social i{
 		font-size: 1.8em;
-		color: #2f302f;
+		color: #2c3d2c;
 		padding: 0 20px;
 	}
-.site-footer-social{
-	border-top: 1px solid #f4f4f4;
-	text-align: center;
-}
+
 .site-footer-copy{
 	border-top: 1px solid #f4f4f4;
 	clear: both;	
