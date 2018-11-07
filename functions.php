@@ -157,6 +157,13 @@ add_action( 'widgets_init', 'vesna_widgets_init' );
 function vesna_scripts() {
 	wp_enqueue_style( 'vesna-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'jquery' );
+	if ( !is_admin() ) {
+        wp_deregister_script('jquery');
+        wp_register_script('jquery', 'https://code.jquery.com/jquery-2.2.4.min.js', '2.2.4', false);
+        wp_enqueue_script('jquery');
+	}
+
 	wp_enqueue_script( 'vesna-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'vesna-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

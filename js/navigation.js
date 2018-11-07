@@ -10,10 +10,11 @@ $(document).ready( function () {
 
 $('.menu-toggle').click(function(e) {
    e.preventDefault();
-    if ($('.navigation').is(":visible") ) {
-      $('.navigation').stop(true,true).slideUp(1000);
+   
+    if ($('#primary-menu').is(":visible") ) {
+      $('#primary-menu').stop(true,true).slideUp(1000);
     } else {
-      $('.navigation').stop(true,true).slideDown(1000);
+      $('#primary-menu').stop(true,true).slideDown(1000);
     }
   });
 
