@@ -26,11 +26,18 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding wrapp">
+<<<<<<< HEAD
 			
 			<div class="logo-burger">
 				<div class="site-header-logo">
 					<?php the_custom_logo();?>
 				</div>
+=======
+			<div class="site-header-bags"></div>
+			<div class="site-header-logo">
+				<?php the_custom_logo();?>
+			</div>
+>>>>>>> bf8bfe526cb7a9c8929add80b890b2a10add65c6
 
 				<button class="hamburger hamburger--spring menu-toggle" type="button">
 							<span class="hamburger-box">
