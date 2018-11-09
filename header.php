@@ -27,12 +27,12 @@
 	<header id="masthead" class="site-header">
 		<div class="site-branding wrapp">
 			<div class="site-header-bags"></div>
-			
+
 			<div class="site-header-logo">
 				<?php the_custom_logo();?>
 			</div>
 
-			<button class="hamburger hamburger--spring menu-toggle" type="button">
+			<button class="hamburger hamburger--spin menu-toggle" type="button">
 						<span class="hamburger-box">
 						<span class="hamburger-inner"></span>
 						</span>
