@@ -1015,6 +1015,11 @@ h1, h2, h3, h4, h5, h6{
 		width: 150px;
 		padding-top: 15px;
 	}
+
+	.logo-burger{
+	
+	}
+
 	.site-header-primary-nav{
 		position: absolute;
 		display: flex;

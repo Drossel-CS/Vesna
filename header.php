@@ -26,15 +26,18 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding wrapp">
-			<div class="site-header-logo">
-				<?php the_custom_logo();?>
-			</div>
+			
+			<div class="logo-burger">
+				<div class="site-header-logo">
+					<?php the_custom_logo();?>
+				</div>
 
-			<button class="hamburger hamburger--spring menu-toggle" type="button">
-						<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-						</span>
-			</button>
+				<button class="hamburger hamburger--spring menu-toggle" type="button">
+							<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+							</span>
+				</button>
+			</div>
 		
 			<div class="site-header-primary-nav">
 				<nav id="site-navigation" class="main-navigation">
