@@ -642,7 +642,7 @@ a:hover, a:active {
 .main-navigation {
 	float: left;
 	display: flex;
-	background: black;
+	background: silver;
 	color: white;
 }
 
@@ -682,7 +682,7 @@ nav.main-navigation li a {
 }
 
 .site-header-primary-nav {
-	
+
 }
 
 @media screen and (min-width: 37.5em) {

@@ -38,7 +38,12 @@
 						'menu_class' => 'menu-items',
 					) );
 					?>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button>
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button> -->
+					<button class="hamburger hamburger--spring menu-toggle" type="button">
+						<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+						</span>
+					</button>
 				</nav><!-- #site-navigation -->
 			</div>
 		</div><!-- .site-branding -->

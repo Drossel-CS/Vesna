@@ -12,9 +12,13 @@ $("#primary-menu").css("display","none");
 $('.menu-toggle').click(function(e) {
    e.preventDefault();
     if ($('#primary-menu').is(":visible") ) {
-      $('#primary-menu').stop(true,true).slideUp(1000);
+      $('.menu-toggle').toggleClass("is-active");
+      $('#primary-menu').stop(true,true).slideUp(700);
+      
     } else {
-      $('#primary-menu').stop(true,true).slideDown(1000);
+      $('.menu-toggle').toggleClass("is-active");
+      $('#primary-menu').stop(true,true).slideDown(700);
+      
     }
   });
 
