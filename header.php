@@ -29,15 +29,22 @@
 			<div class="site-header-logo">
 				<?php the_custom_logo();?>
 			</div>
+			<button class="hamburger hamburger--spring menu-toggle" type="button">
+						<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+						</span>
+			</button>
 			<div class="site-header-primary-nav">
 				<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'header-menu',
 						'menu_id'        => 'primary-menu',
+						'menu_class' => 'menu-items',
 					) );
 					?>
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button> -->
+					
 				</nav><!-- #site-navigation -->
 			</div>
 		</div><!-- .site-branding -->

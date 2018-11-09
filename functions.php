@@ -154,7 +154,7 @@ add_action( 'widgets_init', 'vesna_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function vesna_scripts() {
+function vesna_scripts_styles() {
 	wp_enqueue_style( 'vesna-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jquery' );
@@ -171,8 +171,11 @@ function vesna_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+	wp_enqueue_style( 'hamburgers', get_stylesheet_directory_uri() . '/css/css/hamburgers.css' );
+
 }
-add_action( 'wp_enqueue_scripts', 'vesna_scripts' );
+add_action( 'wp_enqueue_scripts', 'vesna_scripts_styles' );
 
 /*
 ==================================================
