@@ -31,13 +31,14 @@
 			</div>
 			<div class="site-header-primary-nav">
 				<nav id="site-navigation" class="main-navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button>
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'header-menu',
 						'menu_id'        => 'primary-menu',
+						'menu_class' => 'menu-items',
 					) );
 					?>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'vesna' ); ?></button>
 				</nav><!-- #site-navigation -->
 			</div>
 		</div><!-- .site-branding -->

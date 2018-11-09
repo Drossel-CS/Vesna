@@ -8,6 +8,7 @@ $ = jQuery.noConflict(true);
 
 $(document).ready( function () {
 $("#primary-menu").css("display","none");
+
 $('.menu-toggle').click(function(e) {
    e.preventDefault();
     if ($('#primary-menu').is(":visible") ) {

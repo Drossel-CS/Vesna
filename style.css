@@ -640,74 +640,42 @@ a:hover, a:active {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
 	float: left;
-	width: 100%;}
+	display: flex;
+	background: black;
+	color: white;
+}
 
-.main-navigation ul {
-	list-style: none;
+nav.main-navigation ul {
+	list-style-type: none;
 	margin: 0;
-	padding-left: 0;
+	padding: 0;
 }
 
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
-	left: 100%;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
-	left: auto;
-}
-
-.main-navigation li {
-	float: left;
-	position: relative;
-}
-.menu{
-	width: 100%;
-}
-.main-navigation a {
-	display: block;
+nav.main-navigation a {
 	text-decoration: none;
+	color: white;
+	white-space:nowrap;
 }
 
-/* Small menu. */
-.menu-toggle{
-	background: #f4f4f4;
-	border-radius: 10px;
-	border: none;
-	padding: 15px;
-	margin-top: 25px;
-	float: right;
+nav.main-navigation a:hover  {
+	background: #f80;
 }
-.menu-toggle,
-.main-navigation.toggled ul {
+
+
+nav.main-navigation > ul:after {
+	content:'';
+	clear:both;
 	display: block;
 }
 
+nav.main-navigation li  {
+	float:left;
+}
 
-
-
+nav.main-navigation li a {
+	padding: 10px;
+}
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
