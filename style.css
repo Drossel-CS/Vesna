@@ -992,7 +992,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .site-header{
-	/* posi´tion: fixed; */
 	width: 100%;
 	background: #fff;
 	opacity: 0.98;
@@ -1003,7 +1002,6 @@ h1, h2, h3, h4, h5, h6{
 }
 /* Header */
 .site-branding{
-	/* border-bottom: 1px solid #f4f4f4; */
 	height: 90px;
 }
 		.site-header-bags,
@@ -1017,7 +1015,6 @@ h1, h2, h3, h4, h5, h6{
 			float: left;
 			width: 80%;
 			height: 90px;
-			/* position: relative; */
 		}
 
 	.custom-logo-link{
@@ -1038,7 +1035,6 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.main-navigation{
 		width: 100%;
-		/* border-bottom: 1px solid #f4f4f4; */
 	}
 	.menu-menu-1-container{
 		width: 100%;
