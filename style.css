@@ -653,6 +653,8 @@ nav.main-navigation ul {
 nav.main-navigation a {
 	text-decoration: none;
 	white-space:nowrap;
+	text-transform: uppercase;
+	color: #404040;
 }
 
 /* nav.main-navigation a:hover  {
@@ -671,7 +673,10 @@ nav.main-navigation li  {
 }
 
 nav.main-navigation li a {
-	padding: 10px;
+	padding: 20px;
+}
+nav.main-navigation li a:hover {
+	color: #e43159;
 }
 
 .menu-toggle{
@@ -1038,6 +1043,7 @@ h1, h2, h3, h4, h5, h6{
 	}
 	.menu-menu-1-container{
 		width: 100%;
+		height: auto;
 		background: #fff;
 		border-bottom: 1px solid #f4f4f4;
 	}
