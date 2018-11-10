@@ -38,7 +38,7 @@
 						</span>
 			</button>
 		
-			<div class="site-header-primary-nav">
+			<div class="site-header-primary-nav wrapp">
 				<nav id="site-navigation" class="main-navigation">
 					<?php
 					wp_nav_menu( array(

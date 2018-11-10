@@ -1032,8 +1032,34 @@ h1, h2, h3, h4, h5, h6{
 		flex-direction: column;
 		justify-content: space-between;
 		cursor: pointer;
-		margin-top: 100px;
+		width: 100%;
+		margin-top: 90px;
+		/* background: #fff; */
 	}
+	.main-navigation{
+		width: 100%;
+		/* border-bottom: 1px solid #f4f4f4; */
+	}
+	.menu-menu-1-container{
+		width: 100%;
+		background: #fff;
+		border-bottom: 1px solid #f4f4f4;
+	}
+	.nav.main-navigation li{
+		padding: 20px 30px;
+	}
+	.menu-items{
+		height: 60px;
+	}
+	.menu-item{
+		padding-top: 20px;
+	}
+	.menu-item a, .menu-item a:link, .menu-item a:visited{
+		text-transform: uppercase;
+		color: #404040;
+		font-family: 'Montserrat';
+	}
+
 
 	.menu-toggle:active {
 		outline: none;
