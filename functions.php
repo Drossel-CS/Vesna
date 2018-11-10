@@ -157,7 +157,7 @@ add_action( 'widgets_init', 'vesna_widgets_init' );
 function vesna_scripts_styles() {
 	wp_enqueue_style( 'vesna-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-2.2.4.min.js', array(), '2.2.4', true );
+	wp_enqueue_script( 'jquery-update', get_template_directory_uri() . '/js/jquery-2.2.4.min.js', array(), '2.2.4', true );
 	
 	wp_enqueue_script( 'vesna-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
