@@ -30,7 +30,7 @@
 				<i class="icon-youtube"></i>
 			</div>
 			<div class="site-footer-copy">
-				<p class="copy">&copy<?php echo date(' Y '); bloginfo('name'); ?></p>
+				<p class="copy">&copy<?php echo date(' Y '); bloginfo('name'); ?> | Všetky práva vyhradené | Všeobecné podmienky</p>
 				<p class="author">Vytvoril <a href="https://www.drossel.sk" target="_blank">Drossel</a></p>
 			</div>
 		</div><!-- .site-info -->

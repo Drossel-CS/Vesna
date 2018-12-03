@@ -1110,10 +1110,17 @@ h1, h2, h3, h4, h5, h6{
 			width: 20%;
 			/* padding-right: 15px; */
 		}
+
+		/* Newsletter definition */
 		.wpforms-widget{
 			float: left;
 			width: 40%;
 		}
+		div.wpforms-container-full .wpforms-form input, div.wpforms-container-full .wpforms-form label, div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form button, div.wpforms-container-full .wpforms-form textarea{
+			border-radius: 10px;
+			background: #21759b;
+		}
+
 
 		.widgettitle{
 			text-transform: uppercase;
@@ -1173,7 +1180,6 @@ h1, h2, h3, h4, h5, h6{
 
 
 
-
 	@media screen and (max-width: 1100px) {
 		.wrapp{
 			width: 95%;
@@ -1222,7 +1228,7 @@ h1, h2, h3, h4, h5, h6{
 			background: #fff;
 		}
 	}
-
+	
 
 
 
