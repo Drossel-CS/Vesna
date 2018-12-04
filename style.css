@@ -393,7 +393,7 @@ template {
 # Typography
 --------------------------------------------------------------*/
 body,
-button,
+/* button, */
 input,
 select,
 optgroup,
@@ -1060,6 +1060,14 @@ h1, h2, h3, h4, h5, h6{
 	display:none;
 	}
 
+.wp-block-button{
+	color: #fff;
+}
+	.wp-block-button a{
+		text-transform: uppercase;
+		font-size: 0.9em;
+	}
+
 .section-content-text{
 	padding-top: 35px;
 }
@@ -1116,12 +1124,6 @@ h1, h2, h3, h4, h5, h6{
 			float: left;
 			width: 40%;
 		}
-		div.wpforms-container-full .wpforms-form input, div.wpforms-container-full .wpforms-form label, div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form button, div.wpforms-container-full .wpforms-form textarea{
-			border-radius: 10px;
-			background: #21759b;
-		}
-
-
 		.widgettitle{
 			text-transform: uppercase;
 			font-size: 0.9em;
@@ -1217,6 +1219,11 @@ h1, h2, h3, h4, h5, h6{
 		.author{
 			display: none;
 		}
+		 .author a, .author a:link{
+			 font-size: 3em;
+			 text-decoration: none;
+			 color: #21759b;
+		 }
 	}
 	@media screen and (max-width: 450px) {
 		nav.main-navigation li{
