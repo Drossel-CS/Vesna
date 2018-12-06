@@ -9,13 +9,14 @@
  * @package Vesna
  */
 
-?>
+?>´
 
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
 		<div class="wrapp">
 			<div class="site-footer-brands">
+			<div class="heading-center">Spolupracujem</div>
 				<?php dynamic_sidebar( 'Brands-1' ) ?>
 			</div>
 			<div class="site-footer-menus">
