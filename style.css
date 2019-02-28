@@ -655,13 +655,13 @@ nav.main-navigation ul {
 nav.main-navigation a {
 	text-decoration: none;
 	white-space:nowrap;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-weight: 500;
 	color: #707070;
 	display: block;
 	font-family: 'Montserrat';
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 }
 
 nav.main-navigation > ul:after {
@@ -1001,6 +1001,10 @@ h1, h2, h3, h4, h5, h6{
 	max-width: 1100px;
 	margin: 0 auto;
 }
+.wrapper{
+	max-width: 1920px;
+	margin: 0 auto;
+}
 /* Header */
 .site-branding{
 	height: 90px;
@@ -1028,7 +1032,7 @@ h1, h2, h3, h4, h5, h6{
 		display: flex;
 		text-align: center;
 		flex-direction: column;
-		justify-content: space-between;
+		/* ju  stify-content: space-between; */
 		cursor: pointer;
 		width: 100%;
 		margin-top: 90px;
@@ -1142,6 +1146,9 @@ h1, h2, h3, h4, h5, h6{
 	.widget_media_image{
 		margin: 0px 20px;
 		display: inline;
+	}
+	.instagram-gallery{
+		padding: 30px 0;
 	}
 	.site-footer-menus{
 		border-top: 1px solid #f4f4f4;

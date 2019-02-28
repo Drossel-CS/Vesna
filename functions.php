@@ -172,6 +172,14 @@ function vesna_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'vesna_scripts_styles' );
 
+/**
+ * Shortcode activation
+ */
+add_filter('widget_text', 'shortcode_unautop');
+add_filter('widget_text', 'do_shortcode');
+
+
+
 /*
 ==================================================
 Include Fontello icon
