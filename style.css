@@ -67,12 +67,15 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
+html, body {
 	margin: 0;
 	font-family: 'Montserrat';
 	-webkit-font-smoothing: antialiased;
 }
-
+.content-area{
+	font-family: 'Montserrat';
+	line-height: 2;
+}
 /**
  * Correct the font size and margin on `´` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
