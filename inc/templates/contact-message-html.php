@@ -52,27 +52,19 @@
     
         <!-- KEEP THE LAYOUT SIMPLE: THOSE ARE SERVICE MESSAGES. -->
         <body>
-                <!-- <header>
+                <header>
                     <div class="wrapp">
                         <img src="<?php echo $image[0]; ?>">
                     </div>
                 
-                </header> -->
+                </header>
                 <main class="wrapp">
                     <div class="">
-                        <p>Ahoj Lili, <b><?php echo $title;?></b> ti zasiela nasledovnú správu</p>
-                        <p class="text text-content">
-                        <i><?php 
-            
-            if($phone != ''){
-                echo ' ,'.$phone;
-            }
-        ?>
-    </i>
-                            <i><?php echo $message; ?></i>
-                        </p>
+                        <p>Ahoj Lenka, <b><?php echo $title;?></b> ti zasiela nasledovnú správu</p>
+                        <p class="text text-content"><i><?php echo $message; ?></i></p>
                     </div>
                 </main>
+                
                 <footer>
                     <div class="wrapp">
                         <p class="center footer-sub-text">Táto správa bola automaticky generovaná systémom DMS® | www.drossel.sk</p>
@@ -82,4 +74,13 @@
     
             <!-- Main table 100% wide with background color #eee -->    
            
+                                    <p><?php 
+                                            echo $title;
+                                            if($phone != ''){
+                                                echo ' ,'.$phone;
+                                            }
+                                        ?>
+                                    </p>
                                     
+        </body>
+    </html>
