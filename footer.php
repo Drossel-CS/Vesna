@@ -20,7 +20,7 @@
 				<?php dynamic_sidebar( 'Brands-1' ) ?>
 			</div>
 			<div class="instagram-gallery wrapper">
-				<div class="heading-center wrapp">Sleduj ma na instagrame</div>
+				<div class="heading-center wrapp">Som na Instagrame</div>
 				<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>  <!-- instagram shortcode -->
 			</div>
 			<div class="site-footer-menus wrapp">
@@ -35,7 +35,7 @@
 				<i class="icon-youtube"></i>
 			</div>
 			<div class="site-footer-copy wrapp">
-				<p class="copy">&copy<?php echo date(' Y '); bloginfo('name'); ?> | Všetky práva vyhradené | Všeobecné podmienky</p>
+				<p class="copy">&copy<?php echo date(' Y '); bloginfo('name'); ?> | Všetky práva vyhradené | <a href="http://localhost:8888/wordpress/vseobecne-podmienky/">Všeobecné podmienky </a></p>
 				<p class="author">Vytvoril <a href="https://www.drossel.sk" target="_blank">Drossel</a></p>
 			</div>
 		<!-- </div>.site-info -->
