@@ -204,7 +204,7 @@ function wp_load_fontello() {
 */
 add_action('wp_enqueue_scripts', 'add_google_fonts');
 function add_google_fonts(){
-	wp_enqueue_style('google_web_fonts','https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open+Sans:400,400i,600,600i,700,700i,800,800i&amp;subset=latin-ext');
+	wp_enqueue_style('google_web_fonts','<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,700,800,800i,900" rel="stylesheet">');
 }
 
 /**

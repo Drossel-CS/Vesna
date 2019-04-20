@@ -476,6 +476,7 @@ html {
 
 body {
 	background: #fff;
+	font-family: 'Montserrat', sans-serif;
 	/* Fallback for when there is no custom background color defined. */
 }
 
@@ -662,7 +663,7 @@ nav.main-navigation a {
 	font-weight: 500;
 	color: #707070;
 	display: block;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	display: flex;
 	/* justify-content: space-between; */
 }
@@ -982,11 +983,14 @@ Drossel custom theme definition
 ===================================================
  */
 
-h1, h2, h3, h4, h5, h6{
+/* h1, h2, h3, h4, h5, h6{
 	font-weight: 800;
 	font-family: 'Montserrat';
+} */
+h1{
+	font-size: 3em;
+	font-weight: 800;
 }
-
 
 
  .site-main, .site-footer{
@@ -1115,79 +1119,6 @@ h1, h2, h3, h4, h5, h6{
 # Contact form
 --------------------------------------------------------------*/
 
-.form-control-msg, .form-control-invalid-email {
-	display: none;
-}
-/* has-error je class, ktory sa priradi small elementu z contact-form.js aby bol zobrazeny error  */
-.has-error > .form-control {
-	border: 1px solid #B438A2 !important;
-}
-/* js-show-feedback je class, ktory sa prida small elementu z contact-form.js aby bol zobrazeny feedback */
-.js-show-feedback {
-	display: block;
-}
-
-.form-btn:disabled,
-button[disabled]{
-  border: none;
-  background-color:rgb(244, 244, 244);
-  color: #666666;
-  /* font-size: 1em; */
-}
-
-.site-contact-left{
-	float: left;
-	width: 50%;
-	padding: 10px;
-}
-
-.site-contact-right{
-	clear: both;
-	padding: 0 10px;
-}
-	.site-contact-right p{
-		color: #817F7F;
-		font-family: 'Montserrat';
-	}
-	.mini{
-		font-size: 0.4em;
-		margin-top: 10px;
-	}
-
-input[ type="text"], textarea {
-	width: 100%;
-	border-radius: 10px;
-	padding: 15px 20px;
-	margin-bottom: 20px;
-	font-family: 'Montserrat';
-}
-input[ type="checkbox"]{
-	width: 20px;
-	
-}
-.textarea{
-	height: 208px;
-}
-
-
-.site-button{
-	padding: 5px;
-}
-form button{
-	font-family: 'Montserrat';
-	text-transform: uppercase;
-	margin-top: 10px; 
-	cursor: pointer;
-	letter-spacing: 10px;
-	background: #B438A2;
-	color: #fff;
-	padding: 20px;
-	border-radius: 10px;
-	border: none;
-	width: 100%;
-}
-
-
 
 
 /* Footer */
@@ -1199,10 +1130,9 @@ form button{
 	align-items: center;
 	padding: 20px 0;
 	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: .7em;
-	color: #817F7F;
-	font-family: 'Montserrat';
+	font-size: 1em;
+	font-weight: 600;
+	color: #555;
   }
 
   .heading-center::before, .heading-center::after {
@@ -1218,7 +1148,6 @@ form button{
 
 .site-footer{
 	margin-bottom: 300px;
-
 }
 	.site-footer-brands{
 		width: 100%;
@@ -1236,25 +1165,19 @@ form button{
 		padding: 30px 0;
 	}
 	.site-footer-menus{
-		border-top: 1px solid #f4f4f4;
 		padding: 20px 0;
 		clear: both;
 	}
-		.widget_nav_menu{
+		.widget_nav_menu, .widget_text{
 			float: left;
-			width: 20%;
-			/* padding-right: 15px; */
+			width: auto;
+			margin-right: 50px;
 		}
 
-		/* Newsletter definition */
-		.wpforms-widget{
-			float: left;
-			width: 40%;
-		}
 		.widgettitle{
 			text-transform: uppercase;
-			font-size: 0.9em;
-			font-weight: 700;
+			font-size: 1em;
+			font-weight: 800;
 		}
 		
 		.menu-footer-menu-1-container ul, .menu-footer-menu-2-container ul, .menu-footer-menu-3-container ul ,.menu-footer-menu-4-container ul{
@@ -1269,42 +1192,43 @@ form button{
 		}
 		.menu-footer-menu-1-container ul li a, .menu-footer-menu-2-container ul li a, .menu-footer-menu-3-container ul li a,.menu-footer-menu-4-container ul li a{
 			text-decoration: none;
-			color: #555;
-			font-family: 'Open Sans';
-			font-size: 0.9em;
-			/* display: block; */
-			/* letter-spacing: 1.5px; */
+			color: #444;
+			font-size: 1em;
+			font-weight: normal;
+			display: block;
 		}
 		.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
 			color: #e43159;
 		}
 	
 	.site-footer-social{
-		border-top: 1px solid #f4f4f4;
 		padding: 20px;
 		text-align: center;
 		color: #2f302f;
 		clear: both;
 	}
 	.site-footer-social i{
-		font-size: 1.8em;
+		font-size: 2.5em;
 		color: #2c3d2c;
 		padding: 0 20px;
 	}
 
 .site-footer-copy{
-	border-top: 1px solid #f4f4f4;
 	clear: both;	
 	padding: 0 10px;
-	font-size: 0.8em;
-	color: #999;
-	font-weight: 100;
+	font-size: 0.9em;
+	color: #2B2B2B;
+	font-weight: 400;
+	
 }
 	.copy{
-		float: left;	
+		text-align: center;	
 	}
-	.author{
-		float: right;
+	.copy a, .copy a:link{
+		text-decoration: none;
+		font-weight: 700;
+		color: #00C4FF;
+		text-decoration: none;
 	}
 
 
@@ -1362,14 +1286,6 @@ form button{
 			width: 100%;
 			text-align: center;
 		}
-		.author{
-			display: none;
-		}
-		 .author a, .author a:link{
-			 font-size: 3em;
-			 text-decoration: none;
-			 color: #21759b;
-		 }
 	}
 	
 	
