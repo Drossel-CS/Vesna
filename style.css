@@ -990,6 +990,8 @@ Drossel custom theme definition
 h1{
 	font-size: 3em;
 	font-weight: 800;
+	padding: 0;
+	margin: 0;
 }
 
 
@@ -997,6 +999,9 @@ h1{
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+.site-main{
+	/* padding-top: 60px; */
 }
 
 .site-header{
@@ -1013,22 +1018,27 @@ h1{
 	margin: 0 auto;
 }
 /* Header */
+
 .site-branding{
-	height: 90px;
+	height: 110px;
 }
 		.site-header-bags,
 		.hamburger{
 			float: left;
 			width: 10%;
-			height: 90px;
+			height: 110px;
 		}
 		.site-header-logo{
 			text-align: center;
 			float: left;
 			width: 80%;
-			height: 90px;
 		}
-
+	.site-header-bags{
+		padding: 50px 0 0 25px;
+	}
+		.site-header-bags i{
+			font-size: 1.5em;
+		}
 	.custom-logo-link{
 		width: 150px;
 		padding-top: 15px;
@@ -1041,7 +1051,7 @@ h1{
 		flex-direction: column;
 		cursor: pointer;
 		width: 100%;
-		margin-top: 90px;
+		margin-top: 110px;
 		height: auto;
 	}
 	.main-navigation{
@@ -1059,9 +1069,7 @@ h1{
 	.nav.main-navigation li{
 		padding: 20px 30px;
 	}
-	.nav.main-navigation li a{
-		text-align: center;
-	}
+
 	.menu-items{
 		height: 60px;
 		height: auto;
@@ -1134,8 +1142,8 @@ h1{
 	align-items: center;
 	padding: 20px 0;
 	text-transform: uppercase;
-	font-size: 1em;
-	font-weight: 600;
+	font-size: .9em;
+	font-weight: 800;
 	color: #555;
   }
 
@@ -1151,7 +1159,7 @@ h1{
 
 
 .site-footer{
-	margin-bottom: 300px;
+	margin-bottom: 50px;
 }
 	.site-footer-brands{
 		width: 100%;
@@ -1204,7 +1212,9 @@ h1{
 		.menu-footer-menu-1-container ul li a:hover, .menu-footer-menu-2-container ul li a:hover, .menu-footer-menu-3-container ul li a:hover,.menu-footer-menu-4-container ul li a:hover{
 			color: #e43159;
 		}
-	
+		.textwidget p{
+			line-height: 2.25;
+		}
 	.site-footer-social{
 		padding: 20px;
 		text-align: center;
@@ -1229,12 +1239,24 @@ h1{
 		text-align: center;	
 	}
 	.copy a, .copy a:link{
+		color: #2b2b2b;
 		text-decoration: none;
+	}
+	.copy a:hover{
+		color: #e43159;
+	}
+	.copy a.author{
 		font-weight: 700;
 		color: #00C4FF;
 		text-decoration: none;
 	}
-
+.motto{
+	text-align: center;
+	font-weight: 800;
+	margin-bottom: 100px;
+	color: #f4f4f4;
+	letter-spacing: 3px;
+}
 
 
 	@media screen and (max-width: 1100px) {
@@ -1251,9 +1273,10 @@ h1{
 			display: block;
 		}
 		nav.main-navigation li{
-			float: none;
+			/* float: none; */
 			padding: 0;
 			margin: 0;
+			width: 100%;
 		}
 		nav.main-navigation li a {
 			padding: 14px 8px;
@@ -1284,6 +1307,9 @@ h1{
 			color: #fff;
 			background: #e43159;
 			padding: 14px 8px;
+		}
+		.site-footer-social i{
+			padding: 0 5px;
 		}
 		.copy{
 			float: none;

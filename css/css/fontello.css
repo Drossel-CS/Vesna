@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?41698742');
-  src: url('../font/fontello.eot?41698742#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?41698742') format('woff2'),
-       url('../font/fontello.woff?41698742') format('woff'),
-       url('../font/fontello.ttf?41698742') format('truetype'),
-       url('../font/fontello.svg?41698742#fontello') format('svg');
+  src: url('../font/fontello.eot?7517592');
+  src: url('../font/fontello.eot?7517592#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?7517592') format('woff2'),
+       url('../font/fontello.woff?7517592') format('woff'),
+       url('../font/fontello.ttf?7517592') format('truetype'),
+       url('../font/fontello.svg?7517592#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?41698742#fontello') format('svg');
+    src: url('../font/fontello.svg?7517592#fontello') format('svg');
   }
 }
 */
@@ -55,12 +55,30 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-mail:before { content: '\e800'; } /* '' */
+.icon-wordpress:before { content: '\e800'; } /* '' */
+.icon-vimeo:before { content: '\e801'; } /* '' */
+.icon-pinterest:before { content: '\e802'; } /* '' */
+.icon-search:before { content: '\e803'; } /* '' */
+.icon-plus:before { content: '\e804'; } /* '' */
+.icon-minus:before { content: '\e805'; } /* '' */
+.icon-eq:before { content: '\e806'; } /* '' */
+.icon-mail:before { content: '\e807'; } /* '' */
+.icon-attach:before { content: '\e808'; } /* '' */
+.icon-basket:before { content: '\e809'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-github-circled:before { content: '\f09b'; } /* '' */
 .icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-github:before { content: '\f113'; } /* '' */
 .icon-youtube:before { content: '\f167'; } /* '' */
 .icon-instagram:before { content: '\f16d'; } /* '' */
 .icon-dribbble:before { content: '\f17d'; } /* '' */
 .icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-wordpress-1:before { content: '\f19a'; } /* '' */
 .icon-behance:before { content: '\f1b4'; } /* '' */
 .icon-shopping-bag:before { content: '\f290'; } /* '' */
-.icon-facebook-squared:before { content: '\f308'; } /* '' */
+.icon-user-circle:before { content: '\f2bd'; } /* '' */
+.icon-facebook-squared:before { content: '\f30e'; } /* '' */
+.icon-linkedin:before { content: '\f318'; } /* '' */

@@ -27,7 +27,9 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding wrapp">
-			<div class="site-header-bags"></div>
+			<div class="site-header-bags">
+				<i class="icon-basket"></i>
+			</div>
 
 			<div class="site-header-logo">
 				<?php the_custom_logo();?>
