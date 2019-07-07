@@ -16,6 +16,9 @@
                 } 
                 ?>
                 <h3><?php the_title() ?></h3>
+                <div>
+                    <?php the_excerpt(); ?>
+                </div>
                 <a href="<?php echo get_permalink( get_the_ID() ); ?>"><button class="read-more">Prečítať článok</button></a>
                 </div>
 
