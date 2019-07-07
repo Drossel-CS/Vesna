@@ -40,7 +40,23 @@ if ( ! function_exists( 'vesna_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
+		add_filter( 'post_thumbnail_html', 'add_post_thumbnail_custom_class', 10, 2 );
+ 
+function add_post_thumbnail_custom_class( $html, $post_id ) {
+ 
+if( $html == '' ) 
+{
+   return $html;
+} 
+elseif( $custom_class = get_post_meta( $post_id, 'ig', true ) ) 
+{
+   $html = str_replace( 'class="', 'class="' . $custom_class . ' ', $html );
+}
+	
+return $html;
+
+}
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(

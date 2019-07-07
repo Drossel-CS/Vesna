@@ -4,19 +4,19 @@
 ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="main" class="site-main wrapp">
 
     <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <div <?php post_class() ?>>
+            <div <?php post_class() ?> class="post-container">
             <?php
             if ( has_post_thumbnail() ) {
                 the_post_thumbnail();
             } 
             ?>
-            <h1><?php the_title() ?></h1>
-            <a class="read-more" href="<?php echo get_permalink( get_the_ID() ); ?>">Prečítať</a>
+            <h3><?php the_title() ?></h3>
+            <a href="<?php echo get_permalink( get_the_ID() ); ?>"><button class="read-more">Prečítať článok</button></a>
             </div>
 
         <?php endwhile; ?>

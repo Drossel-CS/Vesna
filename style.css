@@ -989,7 +989,7 @@ Drossel custom theme definition
 } */
 h1{
 	font-size: 3em;
-	font-weight: 800;
+	/* font-weight: 800; */
 	padding: 0;
 	margin: 0;
 }
@@ -1064,7 +1064,7 @@ h1{
 		width: 100%;
 		height: auto;
 		background: #fff;
-		border-bottom: 1px solid #f4f4f4;
+		/* border-bottom: 1px solid #f4f4f4; */
 	}
 	.nav.main-navigation li{
 		padding: 20px 30px;
@@ -1156,7 +1156,25 @@ h1{
 	color: #f4f4f4;
   }
 
+.post{
+	width: 33.3333%;
+	float: left;
+	padding: 5px;
+}
 
+.read-more{
+	width: 100%;
+	border: none;
+	padding: 15px;
+	background: #e43159;
+	 border-radius: 4px;
+	 color: #fff;
+	 font-size: .7em;
+	 font-weight: 600;
+	 letter-spacing: 2px;
+	 text-transform: uppercase;
+	 cursor: pointer;
+}
 
 .site-footer{
 	margin-bottom: 50px;
@@ -1266,23 +1284,29 @@ h1{
 
 	}
 	@media screen and (max-width: 870px) {
-		.wrapp{
-			width: 90%;
+		.icon-basket{
+			display: none;
 		}
+		.custom-logo-link{
+			width: 35%;
+		} 
 		nav.main-navigation ul{
 			display: block;
+			z-index: 100000;
 		}
 		nav.main-navigation li{
 			/* float: none; */
 			padding: 0;
 			margin: 0;
 			width: 100%;
+			z-index: 1000000;
 		}
 		nav.main-navigation li a {
 			padding: 14px 8px;
 			border-bottom: 1px solid #f4f4f4;
 			background: #fff;
 			display: block;
+			z-index: 100000;
 		}
 		nav.main-navigation li a:hover{
 			color: #fff;
