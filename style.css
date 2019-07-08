@@ -1159,7 +1159,11 @@ h1{
 .post-container{
 	width: 33.3333%;
 	float: left;
-	padding: 10px;
+	padding: 5px;
+	margin-top: 10px;
+}
+.wp-post-image{
+	border-radius: 10px;
 }
 .post-content, .post-title{
 	margin: 0;

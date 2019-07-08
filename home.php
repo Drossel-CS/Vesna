@@ -15,7 +15,7 @@
                         the_post_thumbnail();
                     } 
                     ?>
-                    <div clas="post-img"><?php the_header_image_tag( ) ?></div>
+                    <div class="post-img"><?php the_header_image_tag() ?></div>
                     <h2 class="post-title"><?php the_title() ?></h2>
                     <div class="post-content">
                         <?php the_excerpt(); ?>
