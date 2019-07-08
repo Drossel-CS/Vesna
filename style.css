@@ -1159,21 +1159,33 @@ h1{
 .post-container{
 	width: 33.3333%;
 	float: left;
-	padding: 5px;
+	padding: 10px;
 }
+.post-content, .post-title{
+	margin: 0;
+	padding: 0;
+}
+	.post-content p{
+		text-indent: 10px;
+		text-align: justify;
+	}
 
 .read-more{
 	width: 100%;
 	border: none;
 	padding: 15px;
-	background: #e43159;
-	 border-radius: 4px;
-	 color: #fff;
+	background: #f4f4f4;
+	 border-radius: 10px;
+	 color: #404040;
 	 font-size: .7em;
 	 font-weight: 600;
 	 letter-spacing: 2px;
 	 text-transform: uppercase;
 	 cursor: pointer;
+}
+.read-more:hover{
+	background: #e43159;
+	color: #fff;
 }
 
 .site-footer{

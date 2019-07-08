@@ -10,16 +10,17 @@
             <?php while ( have_posts() ) : the_post(); ?>
 
                 <div <?php post_class('post-container') ?>>
-                <?php
-                if ( has_post_thumbnail() ) {
-                    the_post_thumbnail();
-                } 
-                ?>
-                <h3><?php the_title() ?></h3>
-                <div>
-                    <?php the_excerpt(); ?>
-                </div>
-                <a href="<?php echo get_permalink( get_the_ID() ); ?>"><button class="read-more">Prečítať článok</button></a>
+                    <?php
+                    if ( has_post_thumbnail() ) {
+                        the_post_thumbnail();
+                    } 
+                    ?>
+                    <div clas="post-img"><?php the_header_image_tag( ) ?></div>
+                    <h2 class="post-title"><?php the_title() ?></h2>
+                    <div class="post-content">
+                        <?php the_excerpt(); ?>
+                    </div>
+                    <a href="<?php echo get_permalink( get_the_ID() ); ?>"><button class="read-more">Prečítať článok</button></a>
                 </div>
 
             <?php endwhile; ?>

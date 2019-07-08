@@ -40,27 +40,12 @@ if ( ! function_exists( 'vesna_setup' ) ) :
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
-		add_theme_support( 'post-thumbnails', array( 'post', 'movie' ) ); // Posts and Movies
-		add_filter( 'post_thumbnail_html', 'add_post_thumbnail_custom_class', 10, 2 );
+		add_theme_support( 'post-thumbnails' ); 
  
-function add_post_thumbnail_custom_class( $html, $post_id ) {
- 
-if( $html == '' ) 
-{
-   return $html;
-} 
-elseif( $custom_class = get_post_meta( $post_id, 'ig', true ) ) 
-{
-   $html = str_replace( 'class="', 'class="' . $custom_class . ' ', $html );
-}
-	
-return $html;
-
-}
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'vesna' ),
+			'primary_menu' => esc_html__( 'Primary', 'vesna' ),
 		) );
 
 		/*
@@ -225,7 +210,7 @@ add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
  * @return int (Maybe) modified excerpt length.
  */
 function wpdocs_custom_excerpt_length( $length ) {
-    return 55;
+    return 25;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
