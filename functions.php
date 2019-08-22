@@ -175,7 +175,7 @@ function vesna_scripts_styles() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	wp_enqueue_style( 'hamburgers', get_stylesheet_directory_uri() . '/css/css/hamburgers.css' );
+	wp_enqueue_style( 'hamburgers', get_stylesheet_directory_uri() . '/css/css/hamburgers.min.css' );
 
 }
 add_action( 'wp_enqueue_scripts', 'vesna_scripts_styles' );

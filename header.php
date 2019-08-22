@@ -34,11 +34,13 @@
 			<div class="site-header-logo">
 				<?php the_custom_logo();?>
 			</div>
-
-			<button class="hamburger hamburger--spin menu-toggle" type="button">
-						<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-						</span>
+			
+			<button class="hamburger hamburger--apple menu-toggle" type="button">
+				<div class="inner">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
 			</button>
 		
 			<div class="site-header-primary-nav wrapp">

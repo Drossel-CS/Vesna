@@ -13,11 +13,11 @@ $("#primary-menu").css("display","none");
     e.preventDefault();
 
       if ($('#primary-menu').is(":visible") ) {
-        $('.menu-toggle').removeClass("is-active");
+        $('.menu-toggle').removeClass("active");
         $('#primary-menu').stop(true,true).slideUp(700);
         
       } else {
-        $('.menu-toggle').addClass("is-active");
+        $('.menu-toggle').addClass("active");
         $('#primary-menu').stop(true,true).slideDown(700); 
       }
       
