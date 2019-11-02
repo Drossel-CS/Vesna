@@ -19,6 +19,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,800&amp;subset=latin-ext" rel="stylesheet">
 
 	<?php wp_head(); ?>
+	
 </head>
 
 <body <?php body_class(); ?>>
@@ -35,7 +36,7 @@
 				<?php the_custom_logo();?>
 			</div>
 			
-			<button class="hamburger hamburger--apple menu-toggle" type="button">
+			<button class="hamburger hamburger--apple menu-toggle hamburger-button" type="button">
 				<div class="inner">
 					<span class="bar"></span>
 					<span class="bar"></span>

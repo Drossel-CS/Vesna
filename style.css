@@ -1020,25 +1020,34 @@ h1{
 /* Header */
 
 .site-branding{
-	height: 110px;
+	height: 90px;
 }
-		.site-header-bags,
-		.hamburger{
+		.site-header-bags{
 			float: left;
 			width: 10%;
-			height: 110px;
+			height: 90px;
+		}
+		.hamburger{
+			float: right;
+			width: 10%;
+			height: 90px;
+			margin-top: 20px;
 		}
 		.site-header-logo{
 			text-align: center;
 			float: left;
 			width: 80%;
 		}
+		
 	.site-header-bags{
-		padding: 50px 0 0 25px;
+		padding: 40px 0 0 25px;
 	}
 		.site-header-bags i{
 			font-size: 1.5em;
 		}
+	.hamburger-button{
+		padding-top: 50px;
+	}
 	.custom-logo-link{
 		width: 150px;
 		padding-top: 15px;
@@ -1051,7 +1060,7 @@ h1{
 		flex-direction: column;
 		cursor: pointer;
 		width: 100%;
-		margin-top: 110px;
+		margin-top: 90px;
 		height: auto;
 	}
 	.main-navigation{
