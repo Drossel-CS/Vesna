@@ -45,7 +45,7 @@ if ( ! function_exists( 'vesna_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary_menu' => esc_html__( 'Primary', 'vesna' ),
+			'header-menu' => esc_html__( 'Primary', 'vesna' ),
 		) );
 
 		/*

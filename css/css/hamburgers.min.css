@@ -53,11 +53,11 @@ div.hamburger > .inner {
 }
 
 .hamburger span.bar:first-child {
-    top:-10px
+    top:-5px
 }
 
 .hamburger span.bar:nth-child(3) {
-    top:10px
+    top:5px
 }
 
 .hamburger:focus {
@@ -162,7 +162,7 @@ div.hamburger > .inner {
 }
 
 .hamburger--apple span.bar:first-child {
-    top: -8px;
+    top: -5px;
     transition:top .5s cubic-bezier(.645, .045, .355, 1), transform .25s cubic-bezier(.645, .045, .355, 1)
 }
 
@@ -171,7 +171,7 @@ div.hamburger > .inner {
 }
 
 .hamburger--apple span.bar:nth-child(3) {
-    top: 8px;
+    top: 5px;
     transition:top .5s cubic-bezier(.645, .045, .355, 1), transform .35s cubic-bezier(.645, .045, .355, 1)
 }
 
