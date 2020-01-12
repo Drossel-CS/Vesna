@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,800&amp;subset=latin-ext" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+	
 	<?php wp_head(); ?>
 	
 </head>
@@ -27,7 +27,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'vesna' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding wrapp">
+		<div class="site-branding header-wrapp">
 			<div class="site-header-bags">
 				<!-- <i class="icon-basket"></i> -->
 			</div>
@@ -44,7 +44,7 @@
 				</div>
 			</button>
 		
-			<div class="site-header-primary-nav wrapp">
+			<div class="site-header-primary-nav">
 				<nav id="site-navigation" class="main-navigation">
 					<?php
 					wp_nav_menu( array(

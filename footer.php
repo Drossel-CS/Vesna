@@ -33,7 +33,7 @@
 			</div>
 			<div class="site-footer-copy wrapp">
 				<p class="copy">Všetky práva vyhradené | <a href="http://localhost:8888/wordpress/?page_id=3&preview=true">Všeobecné podmienky</a> | Cookies | Vytvorilo <a href="https://drossel.sk" target="_blank" class="author">Drossel Studio</a></p>
-				<p class="copy">Copyright &copy2015 -<?php echo date(' Y '); bloginfo('name'); ?>.sk</p>
+				<p class="copy">Copyright &copy2015 -<?php echo date(' Y '); bloginfo('name'); ?></p>
 			</div>
 		<!-- </div>.site-info -->
 	</footer><!-- #colophon -->
