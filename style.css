@@ -992,7 +992,7 @@ h1{
 	}
 
 h1, h2, h3, h4, h5, h6{
-	font-family: 'Gloria Hallelujah', cursive;
+	/* fon´t-family: 'Gloria Hallelujah', cursive; */
 }
  .site-main, .site-footer{
 	width: 100%;
@@ -1020,7 +1020,7 @@ h1, h2, h3, h4, h5, h6{
 /* Header */
 .header-wrapp{
 	margin: 0 auto;
-	max-width: 1024px;
+	max-width: 1100px;
 }
 .site-branding{
 	height: 90px;
@@ -1057,7 +1057,7 @@ h1, h2, h3, h4, h5, h6{
 	}
 
 	.site-header-primary-nav{
-		position: absolute;
+		/* position: absolute; */
 		display: flex;
 		text-align: center;
 		flex-direction: column;
@@ -1101,6 +1101,7 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* Main */
+
  .wrapper{
 	 margin: 0 auto;
 	 max-width: 1920px;
@@ -1108,6 +1109,9 @@ h1, h2, h3, h4, h5, h6{
 .home .entry-title{ 
 	display:none;
 	}
+.entry-header{
+	display: none;
+}
 
 .wp-block-button{
 	color: #fff;
