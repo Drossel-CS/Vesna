@@ -1102,10 +1102,6 @@ h1, h2, h3, h4, h5, h6{
 
 /* Main */
 
- .wrapper{
-	 margin: 0 auto;
-	 max-width: 1920px;
- }
 .home .entry-title{ 
 	display:none;
 	}
@@ -1131,8 +1127,9 @@ h1, h2, h3, h4, h5, h6{
 	text-transform: uppercase;
 }
 .section-content{
-	text-indent: 25px;
+	text-indent: 15px;
 	line-height: 2;
+	margin-bottom: 10px;
 }
 .section-img img{
 	width: 100%;
@@ -1142,6 +1139,9 @@ h1, h2, h3, h4, h5, h6{
 }
 .section-img-right{
 	float: right;
+}
+.section-content-text{
+
 }
 
 
