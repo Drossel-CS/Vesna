@@ -15,10 +15,10 @@
 
 	<footer id="colophon" class="site-footer">
 		<!-- <div class="wrapp"> -->
-			<!-- <div class="instagram-gallery wrapper">
+			<div class="instagram-gallery wrapper">
 				<div class="heading-center wrapp">Sleduj ma na Instagrame</div>
-				<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?> instagram shortcode
-			</div> -->
+				<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>
+			</div>
 			<div class="site-footer-menus wrapp">
 				<?php dynamic_sidebar( 'footer-menu-1' ) ?>
 				<?php dynamic_sidebar( 'footer-menu-2' ) ?>
