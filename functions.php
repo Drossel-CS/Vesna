@@ -275,13 +275,15 @@ require get_template_directory() . '/inc/shortcodes.php';
 Mail server settings on Localhost
 ==================================================
  */
-function mailtrap($phpmailer) {
-    $phpmailer->isSMTP();
-    $phpmailer->Host = 'smtp.mailtrap.io';
-    $phpmailer->SMTPAuth = true;
-    $phpmailer->Port = 2525;
-    $phpmailer->Username = '20c5c6c9751da6';
-    $phpmailer->Password = '13663025133b48';
-  }
+
+
+// function mailtrap($phpmailer) {
+//     $phpmailer->isSMTP();
+//     $phpmailer->Host = 'smtp.mailtrap.io';
+//     $phpmailer->SMTPAuth = true;
+//     $phpmailer->Port = 2525;
+//     $phpmailer->Username = '20c5c6c9751da6';
+//     $phpmailer->Password = '13663025133b48';
+//   }
   
-  add_action('phpmailer_init', 'mailtrap');
+//   add_action('phpmailer_init', 'mailtrap');
