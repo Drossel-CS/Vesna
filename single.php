@@ -12,7 +12,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main wrapp">
-
+		<h1><?php echo single_post_title(); ?></h1>
 		<?php
 		while ( have_posts() ) :
 			the_post();
