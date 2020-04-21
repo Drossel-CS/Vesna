@@ -1008,7 +1008,7 @@ h1, h2, h3, h4, h5, h6{
 	background: #fff;
 	opacity: 0.98;
 }
- .wrapp{
+ .wrapp, .woocommerce-notices-wrapper{
 	max-width: 1100px;
 	margin: 0 auto; 
 
@@ -1312,6 +1312,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
+
+
 	@media screen and (max-width: 1100px) {
 		.wrapp{
 			width: 95%;
@@ -1330,9 +1332,6 @@ h1, h2, h3, h4, h5, h6{
 		.icon-basket{
 			display: none;
 		}
-		.custom-logo-link{
-			width: 40%;
-		} 
 	
 		nav.main-navigation ul{
 			display: block;
@@ -1357,6 +1356,11 @@ h1, h2, h3, h4, h5, h6{
 			background: #e43159;
 
 		}
+
+		.post-container{
+			width: 50%;
+		}
+
 		.widget{
 			float: none;
 			width: 100%;
@@ -1385,7 +1389,18 @@ h1, h2, h3, h4, h5, h6{
 			text-align: center;
 		}
 	}
-	
+	@media screen and (max-width: 540px) {
+		.post-container{
+			float: none;
+			width: 100%;
+		}
+
+	}
+	@media screen and (max-width: 400px) {
+		.site-header-logo{
+			width: 66%;
+		}
+	}
 	
 
 
