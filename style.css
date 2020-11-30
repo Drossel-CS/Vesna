@@ -4,7 +4,7 @@ Theme URI: http://underscores.me/
 Author: Drossel Creative Studio
 Author URI: https://www.drossel.sk
 Description: Description
-Version: 1.01.01
+Version: 1.01.03
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: vesna
@@ -644,20 +644,14 @@ nav.main-navigation ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	display: flex;
-	justify-content: space-between;
 }
 
 nav.main-navigation a {
 	text-decoration: none;
-	/* white-space:nowrap; */
-	/* text-transform: uppercase; */
 	font-weight: 500;
 	color: #2B2B2B;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
-	/* display: flex; */
-	/* justify-content: space-between; */
 }
 
 nav.main-navigation > ul:after {
@@ -1182,21 +1176,23 @@ h1, h2, h3, h4, h5, h6{
   }
 
 .post-container{
-	width: 33.3333%;
+	width: 32%;
 	float: left;
 	padding: 5px;
 	margin-top: 10px;
+	margin-right: 10px;
+	background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(247,247,247,0) 100%);
 }
-.post-container:first-child{
-	margin-right: 20px;
-}
-.wp-post-image{
-	
+
+a .post-container{
+	color:#404040;
 }
 .post-content, .post-title{
 	margin: 0;
 	padding: 0 10px;
 }
+
 	.post-content{
 		min-height: 145px;
 		border-bottom: .5px solid #ecebeb;
@@ -1331,6 +1327,9 @@ h1, h2, h3, h4, h5, h6{
 	height: 400px;
 	image-orientation: from-image;
 }
+.pagination{
+	clear: both;
+}
 
 
 
@@ -1409,6 +1408,13 @@ h1, h2, h3, h4, h5, h6{
 			width: 100%;
 			text-align: center;
 		}
+	}
+	@media screen and (max-width: 785px) {
+		.post-container{
+			/* float: none; */
+			width: 48%;
+		}
+
 	}
 	@media screen and (max-width: 540px) {
 		.post-container{
