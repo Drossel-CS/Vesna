@@ -25,7 +25,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'vesna' ); ?></a>
-
+	<div class="pre-header"></div>
 	<header id="masthead" class="site-header">
 		<div class="site-branding header-wrapp">
 			<div class="site-header-bags">
