@@ -269,7 +269,98 @@ IMPLEMENT FILES
 require get_template_directory() . '/inc/ajax.php';
 require get_template_directory() . '/inc/shortcodes.php';
 
+/*
+==================================================
+Custom Posts Metaboxes
+==================================================
+ */
+ 
+//  add_action("admin_init", "custom_metabox");
 
+//  function custom_metabox(){
+// 	 add_meta_box("drossel_cooking_time", "Čas prípravy", "drosselTime_metabox_field", "post", "normal", "low" );
+//  }
+ 
+//  function drosselTime_metabox_field(){
+// 	 global $post;
+
+// 	 $data = get_post_custom($post->ID);
+// 	 $val = isset($data['drossel_time']) ? esc_attr($data['drossel_time'][0]) : 'no value';
+// 	 echo '<input type="text" name="drossel_time" id="drossel_time" value="'.$val.'">';
+//  }
+
+//  add_action("save_post", "save_detail");
+
+//  function save_detail(){
+// 	global $post;
+
+// 	if(define('DOING_AUTOSAVE') && DOING_AUTOSAVE){
+// 		return $post->ID;
+// 	}
+
+// 	update_post_meta($post->ID, "drossel_time", $_POST["drossel_time"]);
+
+//  }
+
+function drossel_add_custom_box() {
+    $screens = [ 'post', 'wporg_cpt' ];
+    foreach ( $screens as $screen ) {
+        add_meta_box(
+			'drossel_post_time',                 // Unique ID
+            'Čas prípravy',      // Box title
+            'drossel_cas_html',  // Content callback, must be of type callable
+            $screen                            // Post type
+		);
+		
+		add_meta_box(
+			'drossel_post_porcie',                 // Unique ID
+            'Porcie',      // Box title
+            'drossel_porcie_html',  // Content callback, must be of type callable
+            $screen                            // Post type
+        );
+    }
+}
+add_action( 'add_meta_boxes', 'drossel_add_custom_box' );
+
+function drossel_cas_html( $post ) {
+    ?>
+    <label for="drossel_time">Zadajte čas potrebný pre prípravu:</label>
+	<?php
+	$val = get_post_meta( $post->ID, '_drossel_time', true );
+	?>
+    <input type="text" name="drossel_time" id="drossel_time" value="<?php echo $val ?>">
+    <?php
+}
+
+
+function drossel_porcie_html( $post ) {
+    ?>
+    <label for="drossel_porcie">Zadajte počet porcíi:</label>
+	<?php
+	$val2 = get_post_meta( $post->ID, '_drossel_porcie', true );
+	?>
+    <input type="text" name="drossel_porcie" id="drossel_porcie" value="<?php echo $val2 ?>">
+    <?php
+}
+
+function drossel_save_postdata( $post_id ) {
+    if ( array_key_exists( 'drossel_time', $_POST ) ) {
+        update_post_meta(
+            $post_id,
+            '_drossel_time',
+            $_POST['drossel_time']
+        );
+	}
+	
+	if ( array_key_exists( 'drossel_porcie', $_POST ) ) {
+        update_post_meta(
+            $post_id,
+            '_drossel_porcie',
+            $_POST['drossel_porcie']
+        );
+    }
+}
+add_action( 'save_post', 'drossel_save_postdata' );
 /*
 ==================================================
 Mail server settings on Localhost
