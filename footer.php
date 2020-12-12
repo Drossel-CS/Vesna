@@ -26,7 +26,7 @@
 		</div>
 		<div class="site-footer-social wrapp">
 			<a href="https://www.instagram.com/gustoe_kolaciky/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
-			<a href="https://www.facebook.com/Gustoe.sk/" target="_blank"><i class="icon-facebook-squared"></i></a>
+			<a href="https://www.facebook.com/Gustoe.sk/" target="_blank"><i class="icon-facebook-circled"></i></a>
 			<a href="https://sk.pinterest.com/gustoe_kolaciky/" target="_blank"><i class="icon-pinterest"></i></a>
 			<a href="https://www.youtube.com/channel/UC1IGNfr8My3PrKTUvOYW50Q" target="_blank"><i class="icon-youtube"></i></a>
 		</div>

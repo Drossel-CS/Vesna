@@ -17,9 +17,10 @@
                         ?>
                         <div class="post-img"><?php the_header_image_tag() ?></div>
                         <h2 class="post-title"><?php the_title() ?></h2>
-                        <!-- <div class="post-content">
-                            <?php the_excerpt(); ?>
-                        </div> -->
+                        <div class="post-info-item">
+                            <div class="post-left"><p><i class="icon-clock-1"></i>1hod. 45min.</p></div> <!-- V admine pri pisani clanku sa zada cas trvania -->
+                            <div class="post-right"><p>0000</p></div><!-- V admine pri pisani clanku sa zada obtiaznost -->
+                        </div>
                     </div>
                 </a>
 
