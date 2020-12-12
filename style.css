@@ -1193,12 +1193,11 @@ a .post-container{
 .post-content, .post-title{
 	margin: 0;
 }
+	.post-img{}
 	.post-title{
 		line-height: 1;
 		padding:20px 15px;
-	}
-	.post-content{
-		min-height: 185px;
+		min-height: 100px;
 	}
 	.post-content p{
 		text-indent: 5px;
