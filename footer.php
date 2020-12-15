@@ -14,10 +14,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<!--<div class="instagram-gallery wrapper">
+		 <div class="instagram-gallery wrapper">
 			<div class="heading-center wrapp">Sleduj ma na Instagrame</div>
 			<?php echo do_shortcode( '[insta-gallery id="1"]' ); ?>
-		</div>-->
+		</div>
 		<div class="site-footer-menus wrapp">
 			<?php dynamic_sidebar( 'footer-menu-1' ) ?>
 			<?php dynamic_sidebar( 'footer-menu-2' ) ?>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="site-footer-social wrapp">
 			<a href="https://www.instagram.com/gustoe_kolaciky/" target="_blank" title="Instagram"><i class="icon-instagram"></i></a>
-			<a href="https://www.facebook.com/Gustoe.sk/" target="_blank"><i class="icon-facebook-circled"></i></a>
+			<a href="https://www.facebook.com/Gustoe.sk/" target="_blank"><i class="icon-facebook"></i></a>
 			<a href="https://sk.pinterest.com/gustoe_kolaciky/" target="_blank"><i class="icon-pinterest"></i></a>
 			<a href="https://www.youtube.com/channel/UC1IGNfr8My3PrKTUvOYW50Q" target="_blank"><i class="icon-youtube"></i></a>
 		</div>

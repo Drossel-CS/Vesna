@@ -19,8 +19,7 @@
                         <h2 class="post-title"><?php the_title() ?></h2>
                         <div class="post-info-item">
                             <div class="post-left"><p><i class="icon-clock-1"></i><?php echo get_post_meta( $post->ID, '_drossel_time', true ); ?></p></div> <!-- V admine pri pisani clanku sa zada cas trvania -->
-                            <div class="post-center"><p><?php echo get_post_meta( $post->ID, '_drossel_porcie', true ); ?></p></div>
-                            <div class="post-right"><p><img src="../Vesna/img/cookies.png" alt=""></p></div><!-- V admine pri pisani clanku sa zada obtiaznost -->
+                            <div class="post-right"><p><i class="icon-chart-pie-1"></i><?php echo get_post_meta( $post->ID, '_drossel_porcie', true ); ?></p></div><!-- V admine pri pisani clanku sa zada obtiaznost -->
                         </div>
                     </div>
                 </a>

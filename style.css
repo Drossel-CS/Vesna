@@ -1,10 +1,10 @@
 /*!
 Theme Name: Vesna
-Theme URI: http://underscores.me/
+Theme URI: https://www.drossel.sk/gustoe
 Author: Drossel Creative Studio
 Author URI: https://www.drossel.sk
 Description: Description
-Version: 1.01.04
+Version: 1.01.10
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: vesna
@@ -74,7 +74,7 @@ html, body {
 }
 .content-area{
 	font-family: 'Montserrat';
-	line-height: 2;
+	line-height: 1.5;
 }
 /**
  * Correct the font size and margin on `´` elements within `section` and
@@ -480,7 +480,8 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	/* margin: 0 0 1.5em 3em; */
+
 }
 
 ul {
@@ -832,7 +833,7 @@ nav.main-navigation li a:hover {
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	/* margin: 1.5em 0 0; */
 }
 
 .page-links {
@@ -996,6 +997,30 @@ h1, h2, h3, h4, h5, h6{
 .site-main{
 	/* padding-top: 60px; */
 }
+.site-single-header{
+	width: 100%;
+}
+	.site-single-header h1{
+		line-height: .9;
+	}
+	.site-single-header p{
+		padding: 0;
+		margin: 5px 0;
+	}
+	.set{
+		padding-left: 20px;
+	}
+.site-single{
+	width: 70%;
+	float: left;
+}
+
+aside{
+	max-width: 30%;
+	float: left;
+	padding-left: 10px;
+}
+
 .pre-header{
 	width: 100%;
 	height: 50px;
